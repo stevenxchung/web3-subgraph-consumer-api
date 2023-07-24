@@ -1,0 +1,7 @@
+flake8
+Flask
+graphql-core-next
+psycopg2
+pytest
+python-dotenv
+requests
