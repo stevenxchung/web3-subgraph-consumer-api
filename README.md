@@ -1,6 +1,6 @@
 # web3-subgraph-consumer-api
 
-Consumer and API server for open Web3 subgraphs. For more information regarding implementation and design considerations, see `consumer-api-design.md`.
+Consumer and API server for open Web3 subgraphs. For more information regarding implementation and design considerations, see [consumer-api-design.md](https://github.com/stevenxchung/web3-subgraph-consumer-api/blob/master/consumer-api-design.md).
 
 ## Setup
 
@@ -67,11 +67,12 @@ If using VSCode, when debugging be sure to set breakpoints in any file but start
 
 ## Linting
 
-Use `flake8 src/` on the root project to run against all files.
+Use `flake8 src/` in the root project directory to run against all `src/` files.
 
 ## Automated Testing
 
 To run automated acceptance tests:
 
-1. Ensure the app is running and if not follow the steps above
-2. Run `python -m pytest tests/e2e/`
+1. Ensure that your database and tables are setup according to above
+2. If the database has not been populated yet run `sh run.sh` (skip if already populated)
+3. Run `sh run_test.sh` to trigger e2e tests
