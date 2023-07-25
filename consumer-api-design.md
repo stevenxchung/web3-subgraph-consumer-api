@@ -47,7 +47,7 @@ The high-level functionality of the application could be seen in `src/app.py` fi
 
 The documentation on Uniswap is fair for basic querying but there seemed to be limitations when trying to request multiple tokens in one query for instance, the query below:
 
-```json
+```typescript
 {
   tokenHourDatas(
     first: 2
