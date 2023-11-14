@@ -1,6 +1,6 @@
 # web3-subgraph-consumer-api
 
-Consumer and API server for open Web3 subgraphs. For more information regarding implementation and design considerations, see [consumer-api-design.md](https://github.com/stevenxchung/web3-subgraph-consumer-api/blob/master/consumer-api-design.md).
+Consumer and API server for open [Web3 subgraphs](https://medium.com/iearn/subgraphs-explained-yearning-for-data-4e90d18e33e). For more information regarding implementation and design considerations, see [consumer-api-design.md](https://github.com/stevenxchung/web3-subgraph-consumer-api/blob/master/consumer-api-design.md). Enthusiasts may visit the official docs to learn more about [The Graph indexing protocol](https://thegraph.com/docs/en/about/).
 
 ## Setup
 
@@ -54,7 +54,7 @@ The `run.sh` script activates the environment and runs the app. Note that you ma
 For querying the API manually I recommend using Postman:
 
 - Create a new HTTP GET under a new collection
-- URL is `{{your_base_url}}/chart-data?
+- Base URL is `{{your_base_url}}/chart-data`
 - Query params are `token_symbol` (case-insensitive) and `time_unit_in_hours`
 
 ### Querying The API Externally
