@@ -31,6 +31,12 @@ def get_chart_data():
 
         service = APIService()
         res = service.get_data_and_convert(token_symbol, step)
+        if len(res) == 0:
+            return (
+                jsonify(error=f"{token_symbol} is not currently tracked!"),
+                404,
+            )
+
         return jsonify(res), 200
 
     except ValueError:

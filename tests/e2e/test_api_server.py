@@ -56,8 +56,8 @@ def test_valid_request_w_untracked_token(client):
         "/chart-data",
         query_string={"token_symbol": "ETH", "time_unit_in_hours": "24"},
     )
-    assert res.status_code == 200
-    assert res.json == []
+    assert res.status_code == 404
+    assert res.json["error"] == "ETH is not currently tracked!"
 
 
 def test_bad_requests(client):

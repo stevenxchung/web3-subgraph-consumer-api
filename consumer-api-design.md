@@ -96,5 +96,5 @@ Other open questions include:
 - How many records to display from `get_chart_data()` by default?
 - Should `get_chart_data()` response be sorted by ascending or descending by default?
 - How do we want to handle when `token_symbol` or `time_unit_in_hours` is not provided to the API? The app returns `HTTP 400 Bad Request` as of writing
-- What is the preferred response when the user passes in a token that is not being tracked, e.g., ETH? The app returns `[]` as of writing
+- What is the preferred response when the user passes in a token that is not being tracked, e.g., ETH? The app returns `HTTP 404 Not Found` as of writing
 - Although requirements mention to store `name, symbol, totalSupply, volumeUSD, and decimals`, we do not have an API defined for fetching this data. What additional features would utilize this data?
